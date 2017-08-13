@@ -21,6 +21,7 @@ public:
                 result++;
             }
             i--;
+        }
 
         return result;
     }
