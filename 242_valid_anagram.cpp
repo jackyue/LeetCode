@@ -11,7 +11,7 @@ public:
         std::vector<int> s_count;
         std::vector<int> t_count;
         s_count.resize(26);
-	    t_count.resize(26);
+        t_count.resize(26);
         for (int i = 0; i < s.length(); ++i) {
             ++(s_count[s[i] - 'a']);
         }

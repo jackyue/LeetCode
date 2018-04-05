@@ -1,18 +1,12 @@
 /*************************************************************************************** 
  *
- * 
+ * 对原始数据进行排序，原始数组和排序后的数组作对比。
+ * 判断左起第一个不相同的元素low，判断右起第一个不相同的元素high。
+ * 两个不相同的元素的距离则为结果。
+ * 时间复杂度O(n)，空间复杂度O(n)。
  *
  ***************************************************************************************/
 
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
- * };
- */
 class Solution {
 public:
     int findUnsortedSubarray(std::vector<int>& nums) {

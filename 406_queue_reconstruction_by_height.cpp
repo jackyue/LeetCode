@@ -40,12 +40,8 @@ public:
         for (it = people_map.rbegin(); it != people_map.rend(); ++it) {
             std::vector<std::pair<int, int> > people_vec_new;
             std::vector<std::pair<int, int> > people_vec = it->second;
-            // std::cout << "people_vec.size():" << people_vec.size() << std::endl;
-            // std::cout << "people_vec_result.size():" << people_vec_result.size() << std::endl;
             int j = 0;
             for (int i = 0; i < people_vec_result.size(); ++i) {
-                // std::cout << "i:" << i << std::endl;
-                // std::cout << "j:" << j << std::endl;
                 while (j < people_vec.size() && people_vec[j].second == people_vec_new.size()) {
                     people_vec_new.push_back(people_vec[j]);
                     ++j;
