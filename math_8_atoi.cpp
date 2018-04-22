@@ -11,7 +11,7 @@
 class Solution {
 public:
     int myAtoi(string str) {
-        if (str.length() == 0) {
+        if (str.empty()) {
             return 0;
         }
         int i = 0;
